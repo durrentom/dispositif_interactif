@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,
@@ -62,6 +63,12 @@ you want to write about your project.
 Anyone and everyone is welcome to
 [contribute](/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md). Hundreds
 of developers have helped make the HTML5 Boilerplate what it is today.
+=======
+dispositif_interactif
+=====================
+
+IMAC3 - Pygmalion - Dispositif interactif
+>>>>>>> b1007fdd9a5978819c426fbcd8c099ca1a0e2148
 =======
 dispositif_interactif
 =====================
