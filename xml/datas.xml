@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<questions>
+	<question id="1" type="1" hasImg="true">
+		<label>Que représente cette image ?</label>
+		<image value="img/lama.jpg"/>
+		<reponses>
+			<response id="1" nextQuestion="2">			
+				<content>
+					Lama
+				</content>
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="2" nextQuestion="2">			
+				<content>
+					Eglise
+				</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+	  			
+			</response>
+			<response id="3" nextQuestion="2">			
+				<content>
+					M.Cherrier
+				</content>
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="4" nextQuestion="2">			
+				<content>
+					Rien
+				</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+	  			
+			</response>
+		</reponses>
+	</question>
+
+	<!-- QCM SANS IMAGE -->
+	<question id="2" type="1" hasImg="false">
+		<label>
+			Que préférez vous ?
+		</label>
+		<reponses>
+			<response id="2" nextQuestion="3">			
+				<content>
+					Lama
+				</content>
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="2" nextQuestion="3">			
+				<content>
+					Eglise
+				</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+	  			
+			</response>
+			<response id="3" nextQuestion="3">			
+				<content>
+					Nénuphar
+				</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+	  			
+			</response>
+			<response id="4" nextQuestion="3">			
+				<content>
+					l'IMAC
+				</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+	  			
+			</response>
+		</reponses>
+	</question>
+
+	<!-- QCM ENTRE IMAGES -->
+	<question id="3" type="2">
+		<label>
+			Quelle image est un nénuphar ?
+		</label>
+		<reponses>
+			<response id="1" nextQuestion="4">			
+				<content>img/nenuphar.jpg</content>
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="2" nextQuestion="4">			
+				<content>img/nenuphar.jpg</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+			</response>
+			<response id="1" nextQuestion="4">			
+				<content>img/nenuphar.jpg</content>
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="2" nextQuestion="4">			
+				<content>img/nenuphar.jpg</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+			</response>
+		</reponses>
+	</question>
+
+	<!-- QUESTION LIBRE -->
+
+	<question id="4" type="2">
+		<label>Où est le lama ?</label>
+		<reponses>
+			<response id="1" nextQuestion="5">			
+				<content>img/lama.jpg</content>
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="2" nextQuestion="5">			
+				<content>img/nenuphar.jpg</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+			</response>
+			<response id="3" nextQuestion="5">			
+				<content>img/eglise.jpg</content>
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+			</response>
+		</reponses>
+	</question>
+
+	<!-- QUESTION DESSIN -->
+	<question id="5" type="4">
+		<label>
+			Dessine moi un mouton
+		</label>
+		<reponses>
+			<response id="1" nextQuestion="6">			
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="2" nextQuestion="6">			
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+			</response>
+		</reponses>
+	</question>
+
+	<!-- QUESTION DESSIN -->
+	<question id="6" type="5">
+		<label>
+			Comment vas tu ?
+		</label>
+		<reponses>
+			<response id="1" nextQuestion="2">			
+				<coefs>
+					<coef id="1" value="0.5"/>
+					<coef id="2" value="0.1"/>
+					<coef id="3" value="0.2"/>
+					<coef id="4" value="0.2"/>
+				</coefs>
+			</response>
+			<response id="2" nextQuestion="1">			
+				<coefs>
+					<coef id="1" value="0.2"/>
+					<coef id="2" value="0.3"/>
+					<coef id="3" value="0.4"/>
+					<coef id="4" value="0.1"/>
+				</coefs>
+			</response>
+		</reponses>
+	</question>
+</questions>
