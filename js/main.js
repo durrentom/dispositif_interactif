@@ -1,4 +1,6 @@
 var questions = new Array;
+var player;
+var totalQuestions;
 
 function runApp(qId){
 
@@ -36,11 +38,24 @@ function runApp(qId){
 
         var numQuestion = $(this).index();
 
+        for (var i=0; i<4; ++i){ 
+        //A modifier dans le cas ou la reponse determine la question suivante           
+            player.coefs[i] += cur.answers[numQuestion].coefs[i] ;
+            if (cur.id == totalQuestions)
+                player.coefs[i] /= totalQuestions ;    
+        }
+
+        //console.log(player.coefs[0] + " " + player.coefs[1] + " " + player.coefs[2] + " " + player.coefs[3]);
 
 
         var next = cur.answers[numQuestion].nextQuestion;
-        var url = "http://172.20.10.10/DispInt/#"  + next;
+        //changer l'url en fonction du serveur
+        //var url = "http://172.20.10.10/DispInt/#"  + next;
+        var url = "http://127.0.0.1/DispInt/#"  + next;
         window.location.href = url;
+
+        
+
         runApp(next);
         // window.location.reload();
     })
@@ -49,7 +64,7 @@ function runApp(qId){
 
 
 $(document).ready(  function(){
-
+    player = new Player();
 	
 
 	$.ajax( {
@@ -76,7 +91,8 @@ $(document).ready(  function(){
 
                             var coefs = Array();
                             $(this).find("coefs > coef").each(function(){
-                                coefs.push($(this).attr('value'));
+                                var coef = parseFloat( $(this).attr('value') );
+                                coefs.push( coef );
                             });
                             var tempAnswer = new Answer(id,label,nextQuestion,coefs);
                             answers.push(tempAnswer);
@@ -88,6 +104,8 @@ $(document).ready(  function(){
                     questions.push(tempQuestion);
 
                 });
+                totalQuestions = questions.length;                
+
                 var id = window.location.hash.replace("#",'');
                 if(id == 0 || id == '')
                     id = 1; 
